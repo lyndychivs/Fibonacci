@@ -9,6 +9,11 @@
                 throw new ArgumentException($"{nameof(n)} must be greater than or equal to 0.");
             }
 
+            if (n > 46)
+            {
+                throw new ArgumentException($"{nameof(n)} must be less than or equal to 46. (int32 does not support)");
+            }
+
             if (n <= 1)
             {
                 return n;
@@ -32,6 +37,11 @@
             if (length < 0)
             {
                 throw new ArgumentException($"{nameof(length)} must be greater than or equal to 0.");
+            }
+
+            if (length > 46)
+            {
+                throw new ArgumentException($"{nameof(length)} must be less than or equal to 46. (int32 does not support)");
             }
 
             var sequence = new List<int>();
