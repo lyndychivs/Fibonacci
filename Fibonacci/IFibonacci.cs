@@ -1,9 +1,11 @@
 ﻿namespace Fibonacci
 {
+    using System.Numerics;
+
     public interface IFibonacci
     {
-        int GetFibonacci(int n);
+        BigInteger GetFibonacci(int n);
 
-        List<int> GetFibonacciSequence(int length);
+        List<BigInteger> GetFibonacciSequence(int length);
     }
 }

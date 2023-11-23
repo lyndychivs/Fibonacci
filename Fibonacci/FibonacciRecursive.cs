@@ -1,17 +1,14 @@
 ﻿namespace Fibonacci
 {
+    using System.Numerics;
+
     public class FibonacciRecursive : IFibonacci
     {
-        public int GetFibonacci(int n)
+        public BigInteger GetFibonacci(int n)
         {
             if (n < 0)
             {
                 throw new ArgumentException($"{nameof(n)} must be greater than or equal to 0.");
-            }
-
-            if (n > 46)
-            {
-                throw new ArgumentException($"{nameof(n)} must be less than or equal to 46. (int32 does not support)");
             }
 
             if (n <= 1)
@@ -22,24 +19,19 @@
             return GetFibonacci(n - 1) + GetFibonacci(n - 2);
         }
 
-        public List<int> GetFibonacciSequence(int length)
+        public List<BigInteger> GetFibonacciSequence(int length)
         {
             if (length < 0)
             {
                 throw new ArgumentException($"{nameof(length)} must be greater than or equal to 0.");
             }
 
-            if (length > 46)
-            {
-                throw new ArgumentException($"{nameof(length)} must be less than or equal to 46. (int32 does not support)");
-            }
-
-            var sequence = new List<int>();
+            var sequence = new List<BigInteger>();
 
             return GetFibonacciSequence(length, sequence);
         }
 
-        private List<int> GetFibonacciSequence(int length, List<int> sequence)
+        private List<BigInteger> GetFibonacciSequence(int length, List<BigInteger> sequence)
         {
             if (length == sequence.Count)
             {
