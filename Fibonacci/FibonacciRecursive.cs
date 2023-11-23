@@ -25,12 +25,20 @@
             }
 
             var sequence = new List<int>();
-            for (int i = 0; i < length; i++)
+
+            return GetFibonacciSequence(length, sequence);
+        }
+
+        private List<int> GetFibonacciSequence(int length, List<int> sequence)
+        {
+            if (length == sequence.Count)
             {
-                sequence.Add(GetFibonacci(i));
+                return sequence;
             }
 
-            return sequence;
+            sequence.Add(GetFibonacci(sequence.Count));
+
+            return GetFibonacciSequence(length, sequence);
         }
     }
 }
