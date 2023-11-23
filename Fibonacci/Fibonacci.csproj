@@ -17,6 +17,7 @@
     <PackageTags>fibonacci;sequence;iteration;recursion;int32;nth</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <PackageId>lyndychivs.Fibonacci</PackageId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>none</DebugType>
