@@ -18,7 +18,7 @@ jobs:
     - name: dotnet test
       run: dotnet test --no-build --configuration Release --verbosity normal --list-tests --blame
     - name: dotnet pack
-      run: dotnet pack Fibonacci//Fibonacci.csproj --configuration Release --no-build
+      run: dotnet pack Fibonacci/Fibonacci.csproj --configuration Release --no-build
     - name: dotnet nuget push to NuGet
       run: dotnet nuget push *.nupkg --api-key ${{secrets.FIBONACCI_NUGET}} --source "https://api.nuget.org/v3/index.json" --skip-duplicate
     - name: dotnet nuget push to GitHub
