@@ -1,20 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Library</OutputType>
     <SignAssembly>False</SignAssembly>
     <ErrorReport>prompt</ErrorReport>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Fibonacci</Title>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>lyndychivs</Authors>
     <Description>A simple library for generating the Fibonacci sequence.</Description>
     <PackageProjectUrl>https://github.com/lyndychivs/Fibonacci</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/lyndychivs/Fibonacci</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>fibonacci;sequence;iteration;recursion;int32;nth</PackageTags>
+    <PackageTags>fibonacci;sequence;iteration;recursion;bigint;nth;big;integer</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <PackageId>lyndychivs.Fibonacci</PackageId>
