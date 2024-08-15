@@ -18,7 +18,22 @@ public interface IFibonacci
 
 There are two concrete implementations of this Interface.
 1. [FibonacciIterative](https://github.com/lyndychivs/Fibonacci/blob/master/Fibonacci/FibonacciIterative.cs)
+```csharp
+var fibonacci = new FibonacciIterative();
+
+BigInteger result = fibonacci.GetFibonacci(5);
+
+List<BigInteger> sequence = fibonacci.GetFibonacciSequence(3);
+```
+
 2. [FibonacciRecursive](https://github.com/lyndychivs/Fibonacci/blob/master/Fibonacci/FibonacciRecursive.cs)
+```csharp
+var fibonacci = new FibonacciRecursive();
+
+BigInteger result = fibonacci.GetFibonacci(5);
+
+List<BigInteger> sequence = fibonacci.GetFibonacciSequence(3);
+```
 
 ## Package
 Available on:
