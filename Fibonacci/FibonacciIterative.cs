@@ -4,8 +4,17 @@
     using System.Collections.Generic;
     using System.Numerics;
 
+    /// <summary>
+    /// Generate Fibonacci using Iteration
+    /// </summary>
     public class FibonacciIterative : IFibonacci
     {
+        /// <summary>
+        /// Get the Fibonacci number at the specified index
+        /// </summary>
+        /// <param name="n">The n-th index of Fibonacci as <see cref="int"/></param>
+        /// <returns>The value of Fibonacci as <see cref="BigInteger"/></returns>
+        /// <exception cref="ArgumentException"></exception>
         public BigInteger GetFibonacci(int n)
         {
             if (n < 0)
@@ -31,6 +40,12 @@
             return current;
         }
 
+        /// <summary>
+        /// Get the Fibonacci sequence up to the specified length
+        /// </summary>
+        /// <param name="length">The length as <see cref="int"/></param>
+        /// <returns>The Fibonacci sequence as <see cref="List{T}"/> of <see cref="BigInteger"/></returns>
+        /// <exception cref="ArgumentException"></exception>
         public List<BigInteger> GetFibonacciSequence(int length)
         {
             if (length < 0)

@@ -1,5 +1,5 @@
 # lyndychivs.Fibonacci
-![The Fibonacci Sequence as image](https://raw.githubusercontent.com/lyndychivs/Fibonacci/master/Resource/fibonacci.png)
+![The Fibonacci Sequence as image](https://raw.githubusercontent.com/lyndychivs/Fibonacci/master/Resources/fibonacci.png)
 
 The [Fibonacci Sequence](https://en.wikipedia.org/wiki/Fibonacci_sequence) in C# using recursion and iteration returning [BigInteger](https://learn.microsoft.com/en-us/dotnet/api/system.numerics.biginteger) values.
 

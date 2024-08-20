@@ -6,7 +6,7 @@
     <ErrorReport>prompt</ErrorReport>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Fibonacci</Title>
-    <Version>1.0.6</Version>
+    <Version>1.0.7</Version>
     <Authors>lyndychivs</Authors>
     <Description>A simple library for generating the Fibonacci sequence using Iterative or Recursive methods.</Description>
     <PackageProjectUrl>https://github.com/lyndychivs/Fibonacci</PackageProjectUrl>
@@ -17,6 +17,12 @@
     <NeutralLanguage>en</NeutralLanguage>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <PackageId>lyndychivs.Fibonacci</PackageId>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageReleaseNotes>Implemented XML API docs</PackageReleaseNotes>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <PackageIcon>Fibonacci.png</PackageIcon>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>none</DebugType>
@@ -30,9 +36,18 @@
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Resouces\Fibonacci.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resouces\Fibonacci.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
