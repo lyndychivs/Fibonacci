@@ -1,7 +1,7 @@
 name: .NET Restore, Build, Test & Publish
-on:
-  push:
-    branches: [ "master" ]
+permissions:
+  contents: read
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,7 +10,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 8.0.x
     - name: dotnet restore
       run: dotnet restore
     - name: dotnet build
