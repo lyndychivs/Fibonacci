@@ -1,0 +1,52 @@
+{
+  "stryker-config": {
+    "project-info": {
+      "name": "github.com/lyndychivs/Fibonacci",
+      "module": "Fibonacci",
+      "version": "master"
+    },
+    "concurrency": 2,
+    "mutation-level": "Complete",
+    "language-version": "latest",
+    "additional-timeout": 5000,
+    "mutate": [
+      "**/*"
+    ],
+    "solution": "Fibonacci.sln",
+    "configuration": "Debug",
+    "target-framework": null,
+    "project": "/Fibonacci/Fibonacci.csproj",
+    "coverage-analysis": "perTest",
+    "disable-bail": false,
+    "disable-mix-mutants": false,
+    "thresholds": {
+      "high": 80,
+      "low": 60,
+      "break": 0
+    },
+    "verbosity": "info",
+    "reporters": [
+      "Progress",
+      "Html",
+      "dashboard"
+    ],
+    "since": {
+      "enabled": false,
+      "ignore-changes-in": [],
+      "target": "master"
+    },
+    "baseline": {
+      "enabled": false,
+      "provider": "disk",
+      "azure-fileshare-url": "",
+      "fallback-version": "master"
+    },
+    "dashboard-url": "https://dashboard.stryker-mutator.io",
+    "test-projects": ["/Fibonacci.Tests/Fibonacci.Tests.csproj"],
+    "test-case-filter": "",
+    "ignore-mutations": [],
+    "ignore-methods": [],
+    "report-file-name": "mutation-report.html",
+    "break-on-initial-test-failure": false
+  }
+}
