@@ -11,9 +11,9 @@ One Interface exists:
 ```csharp
 public interface IFibonacci
 {
-    BigInteger GetFibonacci(int n);
+    BigInteger Get(int n);
 
-    List<BigInteger> GetFibonacciSequence(int length);
+    List<BigInteger> GetSequence(int length);
 }
 ```
 
@@ -23,9 +23,9 @@ There are two concrete implementations of this Interface.
 ```csharp
 var fibonacci = new FibonacciIterative();
 
-BigInteger result = fibonacci.GetFibonacci(5);
+BigInteger result = fibonacci.Get(5);
 
-List<BigInteger> sequence = fibonacci.GetFibonacciSequence(3);
+List<BigInteger> sequence = fibonacci.GetSequence(3);
 ```
 
 2. [FibonacciRecursive](https://github.com/lyndychivs/Fibonacci/blob/master/Fibonacci/FibonacciRecursive.cs)
@@ -33,9 +33,9 @@ List<BigInteger> sequence = fibonacci.GetFibonacciSequence(3);
 ```csharp
 var fibonacci = new FibonacciRecursive();
 
-BigInteger result = fibonacci.GetFibonacci(5);
+BigInteger result = fibonacci.Get(5);
 
-List<BigInteger> sequence = fibonacci.GetFibonacciSequence(3);
+List<BigInteger> sequence = fibonacci.GetSequence(3);
 ```
 
 ## Package

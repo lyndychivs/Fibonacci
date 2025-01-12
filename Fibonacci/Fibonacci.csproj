@@ -6,7 +6,7 @@
     <ErrorReport>prompt</ErrorReport>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Fibonacci</Title>
-    <Version>1.0.7</Version>
+    <Version>1.0.8</Version>
     <Authors>lyndychivs</Authors>
     <Description>A simple library for generating the Fibonacci sequence using Iterative or Recursive methods.</Description>
     <PackageProjectUrl>https://github.com/lyndychivs/Fibonacci</PackageProjectUrl>
@@ -19,7 +19,8 @@
     <PackageId>lyndychivs.Fibonacci</PackageId>
     <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <PackageReleaseNotes>Implemented XML API docs</PackageReleaseNotes>
+    <PackageReleaseNotes>Breaking Changes: Updated the Fibonacci interface signatures
+</PackageReleaseNotes>
     <EnableNETAnalyzers>True</EnableNETAnalyzers>
     <AnalysisLevel>latest</AnalysisLevel>
     <PackageIcon>Fibonacci.png</PackageIcon>
