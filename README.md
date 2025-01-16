@@ -1,4 +1,7 @@
+[![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2FFibonacci)](https://dashboard.stryker-mutator.io/reports/github.com/lyndychivs/Fibonacci/master)
+
 # lyndychivs.Fibonacci
+
 ![The Fibonacci Sequence as image](https://raw.githubusercontent.com/lyndychivs/Fibonacci/master/Resources/fibonacci.png)
 
 The [Fibonacci Sequence](https://en.wikipedia.org/wiki/Fibonacci_sequence) in C# using recursion and iteration returning [BigInteger](https://learn.microsoft.com/en-us/dotnet/api/system.numerics.biginteger) values.
