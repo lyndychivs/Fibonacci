@@ -1,14 +1,14 @@
-[![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Flyndychivs%2FFibonacci%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/lyndychivs/Fibonacci/maste)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Flyndychivs%2FFibonacci%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/lyndychivs/Fibonacci/maste)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/lyndychivs.Fibonacci?style=for-the-badge&logo=nuget)](https://www.nuget.org/packages/lyndychivs.Fibonacci/)
 
 # lyndychivs.Fibonacci
 
-![The Fibonacci Sequence as image](https://raw.githubusercontent.com/lyndychivs/Fibonacci/master/Resources/fibonacci.png)
+![The Fibonacci Sequence as image](https://raw.githubusercontent.com/lyndychivs/Fibonacci/main/Resources/fibonacci.png)
 
 The [Fibonacci Sequence](https://en.wikipedia.org/wiki/Fibonacci_sequence) in C# using recursion and iteration returning [BigInteger](https://learn.microsoft.com/en-us/dotnet/api/system.numerics.biginteger) values.
 
 ## Tests & Examples
-All Unit Tests can be found under the [Fibonacci.Tests](https://github.com/lyndychivs/Fibonacci/tree/master/Fibonacci.Tests) namesapce.
+All Unit Tests can be found under the [Fibonacci.Tests](https://github.com/lyndychivs/Fibonacci/tree/main/Fibonacci.Tests) namesapce.
 
 One Interface exists:
 
@@ -23,7 +23,7 @@ public interface IFibonacci
 
 There are two concrete implementations of this Interface.
 
-#### [FibonacciIterative](https://github.com/lyndychivs/Fibonacci/blob/master/Fibonacci/FibonacciIterative.cs)
+#### [FibonacciIterative](https://github.com/lyndychivs/Fibonacci/blob/main/Fibonacci/FibonacciIterative.cs)
 
 ```csharp
 var fibonacci = new FibonacciIterative();
@@ -33,7 +33,7 @@ BigInteger result = fibonacci.Get(5);
 List<BigInteger> sequence = fibonacci.GetSequence(3);
 ```
 
-#### [FibonacciRecursive](https://github.com/lyndychivs/Fibonacci/blob/master/Fibonacci/FibonacciRecursive.cs)
+#### [FibonacciRecursive](https://github.com/lyndychivs/Fibonacci/blob/main/Fibonacci/FibonacciRecursive.cs)
 
 ```csharp
 var fibonacci = new FibonacciRecursive();

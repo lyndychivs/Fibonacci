@@ -3,7 +3,7 @@
     "project-info": {
       "name": "github.com/lyndychivs/Fibonacci",
       "module": "Fibonacci",
-      "version": "master"
+      "version": "main"
     },
     "concurrency": 2,
     "mutation-level": "Complete",
@@ -14,7 +14,7 @@
     ],
     "solution": "Fibonacci.sln",
     "configuration": "Debug",
-    "target-framework": null,
+    "target-framework": "net10.0",
     "project": "/Fibonacci/Fibonacci.csproj",
     "coverage-analysis": "perTest",
     "disable-bail": false,
@@ -27,19 +27,18 @@
     "verbosity": "info",
     "reporters": [
       "Progress",
-      "Html",
-      "dashboard"
+      "Html"
     ],
     "since": {
       "enabled": false,
       "ignore-changes-in": [],
-      "target": "master"
+      "target": "main"
     },
     "baseline": {
       "enabled": false,
       "provider": "disk",
       "azure-fileshare-url": "",
-      "fallback-version": "master"
+      "fallback-version": "main"
     },
     "dashboard-url": "https://dashboard.stryker-mutator.io",
     "test-projects": ["/Fibonacci.Tests/Fibonacci.Tests.csproj"],
