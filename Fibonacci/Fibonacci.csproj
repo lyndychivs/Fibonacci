@@ -6,7 +6,7 @@
     <ErrorReport>prompt</ErrorReport>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Fibonacci</Title>
-    <Version>1.0.8</Version>
+    <Version>1.0.9</Version>
     <Authors>lyndychivs</Authors>
     <Description>A simple library for generating the Fibonacci sequence using Iterative or Recursive methods.</Description>
     <PackageProjectUrl>https://github.com/lyndychivs/Fibonacci</PackageProjectUrl>
