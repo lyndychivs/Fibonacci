@@ -1,5 +1,6 @@
-[![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Flyndychivs%2FFibonacci%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/lyndychivs/Fibonacci/maste)
-[![NuGet Downloads](https://img.shields.io/nuget/dt/lyndychivs.Fibonacci?style=for-the-badge&logo=nuget)](https://www.nuget.org/packages/lyndychivs.Fibonacci/)
+[![Build & Test](https://github.com/lyndychivs/Fibonacci/actions/workflows/build-test.yml/badge.svg?branch=main)](https://github.com/lyndychivs/Fibonacci/actions/workflows/build-test.yml)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Flyndychivs%2FFibonacci%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/lyndychivs/Fibonacci/maste)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/lyndychivs.Fibonacci?style=flat&logo=nuget)](https://www.nuget.org/packages/lyndychivs.Fibonacci/)
 
 # lyndychivs.Fibonacci
 

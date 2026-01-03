@@ -1,55 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <OutputType>Library</OutputType>
-    <SignAssembly>False</SignAssembly>
-    <ErrorReport>prompt</ErrorReport>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>Fibonacci</Title>
-    <Version>1.0.9</Version>
-    <Authors>lyndychivs</Authors>
-    <Description>A simple library for generating the Fibonacci sequence using Iterative or Recursive methods.</Description>
-    <PackageProjectUrl>https://github.com/lyndychivs/Fibonacci</PackageProjectUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/lyndychivs/Fibonacci</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>fibonacci;sequence;iteration;recursion;bigint;nth;big;integer</PackageTags>
-    <NeutralLanguage>en</NeutralLanguage>
-    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-    <PackageId>lyndychivs.Fibonacci</PackageId>
-    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
-    <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <PackageReleaseNotes>Breaking Changes: Updated the Fibonacci interface signatures
-</PackageReleaseNotes>
-    <EnableNETAnalyzers>True</EnableNETAnalyzers>
-    <AnalysisLevel>latest</AnalysisLevel>
-    <PackageIcon>Fibonacci.png</PackageIcon>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DebugType>none</DebugType>
-    <WarningLevel>9999</WarningLevel>
-    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <WarningLevel>9999</WarningLevel>
-    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
-  </PropertyGroup>
-  <ItemGroup>
-    <None Remove="Resources\Fibonacci.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Fibonacci.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </EmbeddedResource>
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageId>lyndychivs.Fibonacci</PackageId>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+        <EmbeddedResource Include="Resources\Fibonacci.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </EmbeddedResource>
+    </ItemGroup>
+
 </Project>

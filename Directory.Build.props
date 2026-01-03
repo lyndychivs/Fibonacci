@@ -1,0 +1,64 @@
+<Project>
+    <PropertyGroup>
+        <ImportDirectoryBuildProps>true</ImportDirectoryBuildProps>
+    </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+
+        <OutputType>Library</OutputType>
+        <Configurations>Debug;Release</Configurations>
+
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <EnableNETAnalyzers>True</EnableNETAnalyzers>
+        <AnalysisLevel>latest</AnalysisLevel>
+        <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+
+        <!-- Version can be overridden by CI/CD via environment variable -->
+        <Version Condition="'$(Version)' == ''">1.0.0</Version>
+        <AssemblyVersion Condition="'$(AssemblyVersion)' == ''">$(Version)</AssemblyVersion>
+        <FileVersion Condition="'$(FileVersion)' == ''">$(Version)</FileVersion>
+
+        <IncludeSymbols>True</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+        <Authors>lyndychivs</Authors>
+        <Company>lyndychivs</Company>
+
+        <Title>Fibonacci</Title>
+        <Product>Fibonacci</Product>
+
+        <PackageIcon>Fibonacci.png</PackageIcon>
+        <Copyright>lyndychivs Fibonacci © 2026</Copyright>
+
+        <Description>A simple library for generating the Fibonacci sequence using Iterative or Recursive methods.</Description>
+        <PackageTags>fibonacci;sequence;iteration;recursion;bigint;nth;big;integer</PackageTags>
+
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
+        <PackageProjectUrl>https://github.com/lyndychivs/Fibonacci</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/lyndychivs/Fibonacci</RepositoryUrl>
+
+        <RepositoryType>git</RepositoryType>
+        <NeutralLanguage>en</NeutralLanguage>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+        <Optimize>true</Optimize>
+        <DebugType>full</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+        <WarningLevel>9999</WarningLevel>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+        <Optimize>false</Optimize>
+        <DebugType>full</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+        <WarningLevel>9999</WarningLevel>
+    </PropertyGroup>
+</Project>

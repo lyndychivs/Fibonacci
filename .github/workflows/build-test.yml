@@ -1,14 +1,14 @@
-name: Build, Test & Publish
-run-name: Build, Test & Publish
+name: Build & Test
+run-name: Build & Test
 permissions:
   contents: read
   checks: write
 on:
   push:
   schedule:
-    - cron: '0 4 * * SUN'
+    - cron: "0 4 * * SUN"
 jobs:
-  build-test-publish:
+  build-test:
     runs-on: ubuntu-latest
     env:
       CONFIGURATION: Release
@@ -28,7 +28,7 @@ jobs:
       run: dotnet build --no-restore --configuration ${{ env.CONFIGURATION }}
 
     - name: Test
-      run: dotnet test --no-build --configuration ${{ env.CONFIGURATION }} --logger "trx;LogFileName=Fibonacci-Test-Results.trx"
+      run: dotnet test --no-build --configuration ${{ env.CONFIGURATION }} --logger "trx;LogFileName=Results.trx"
 
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v2
@@ -36,11 +36,3 @@ jobs:
       with:
         files: '**/*.trx'
         action_fail_on_inconclusive: true
-
-    - name: Push to NuGet
-      if: github.ref == 'refs/heads/main'
-      run: dotnet nuget push **.nupkg --api-key ${{secrets.FIBONACCI_NUGET}} --source "https://api.nuget.org/v3/index.json" --skip-duplicate
-
-    - name: Push to GitHub
-      if: github.ref == 'refs/heads/main'
-      run: dotnet nuget push **.nupkg --api-key ${{secrets.FIBONACCI_GITHUB}} --source "https://nuget.pkg.github.com/lyndychivs/index.json" --skip-duplicate
